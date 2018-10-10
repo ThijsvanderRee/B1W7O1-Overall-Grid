@@ -1,38 +1,55 @@
-.container-grid{
-	display: grid;
-	grid-template-columns: auto auto auto auto;
-	grid-gap: 10px;
-	grid-template-rows: 300px 300px 100px;
-}
-.nestedgrid{
-	display: grid;
-	grid-template-columns: auto auto auto auto;
-	grid-gap: 10px;
-	grid-template-rows: 100px 100px 100px;
+#everything{
+	width: 1100px;
+	margin: 0 auto;
 }
 
-.section1{
-	grid-column: 1 / 5;
+#container-grid{
+	display: grid;
+	grid-template-columns: repeat(3, auto);
+	grid-gap: 5%;
+	grid-template-rows: 400px 300px 100px;
+}
+#nestedgrid{
+	display: grid;
+	grid-template-columns: repeat(3, auto);
+	grid-gap: 5%;
+	grid-template-rows: 100px;
+	margin: 10px;
+}
+
+#section1{
+	grid-column: 1 / 4;
+	grid-row: 1;
+	background-image: url(img/banner_bg.png);
+	color: white;
+	text-align: center;
+	font-size: 20px;
+
+}
+
+#section1a{
+	grid-column: 4 / 5;
 	grid-row: 1;
 	background-color: red;
+	/*background-image: url(img/banner_bg.png);*/
 	color: white;
 	text-align: center;
 	font-size: 20px;
 }
 
-.section2{
+#section2{
 	grid-column: 1 / 5;
 	grid-row: 2;
-	background-color: green;
+	background-color: white;
 	color: white;
 	text-align: center;
 	font-size: 20px;
 }
 
-.section3{
+#section3{
 	grid-column: 1 / 5;
 	grid-row: 3;
-	background-color: orange;
+	background-image: url(img/footer_bg.png);
 	color: white;
 	text-align: center;
 	font-size: 20px;
@@ -48,12 +65,14 @@ ul {
 
 li {
     float: right;
-    margin-top: 10px
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 20px;
 }
 
 li a {
     display: block;
-    color: red;
+    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
