@@ -6,7 +6,6 @@
 #container-grid{
 	display: grid;
 	grid-template-columns: repeat(3, auto);
-	grid-gap: 5%;
 	grid-template-rows: 400px 300px 100px;
 }
 #nestedgrid{
